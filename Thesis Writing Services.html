@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK-Writing Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: red;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 1rem;
+            color: blue;
+            text-decoration: none;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .language-buttons {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .language-buttons button {
+            margin: 0 0.5rem;
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HK-Writing Services</h1>
+    </header>
+    
+    <nav>
+        <a href="#english">English</a>
+        <a href="#dari">Dari</a>
+        <a href="#pashto">Pashto</a>
+    </nav>
+
+    <div class="container">
+        <!-- English Section -->
+        <div id="english" class="section">
+            <h2>Thesis Writing Services</h2>
+            <p>Welcome to HK-Writing Services! We provide professional thesis writing assistance to help you achieve academic success. Contact us for personalized support and expert guidance.</p>
+            <p>Email: <a href="mailto:Homayun.kbl@gmail.com">Homayun.kbl@gmail.com</a></p>
+            <p>Phone: <a href="tel:+93731575758">+93731575758</a></p>
+            <p>WhatsApp: <a href="https://wa.me/93731575758" target="_blank">Message HK Thesis Writing Services on WhatsApp</a></p>
+        </div>
+
+        <!-- Dari Section -->
+        <div id="dari" class="section" style="display: none;">
+            <h2>خدمات نوشتن پایان نامه</h2>
+            <p>به خدمات نوشتن HK خوش آمدید! ما خدمات حرفه‌ای نوشتن پایان نامه را برای کمک به موفقیت تحصیلی شما ارائه می‌دهیم. برای پشتیبانی شخصی و راهنمایی تخصصی با ما تماس بگیرید.</p>
+            <p>ایمیل: <a href="mailto:Homayun.kbl@gmail.com">Homayun.kbl@gmail.com</a></p>
+            <p>تلفن: <a href="tel:+93731575758">+93731575758</a></p>
+            <p>واتس‌آپ: <a href="https://wa.me/93731575758" target="_blank">پیام به خدمات نوشتن پایان نامه HK در واتس‌آپ</a></p>
+        </div>
+
+        <!-- Pashto Section -->
+        <div id="pashto" class="section" style="display: none;">
+            <h2>د تیسس لیکلو خدمات</h2>
+            <p>HK-Writing Services ته ښه راغلاست! موږ د تیسس لیکلو مسلکي مرسته وړاندې کوو ترڅو ستاسو علمي بریا یقیني کړو. د شخصي ملاتړ او مسلکي لارښود لپاره زموږ سره اړیکه ونیسئ.</p>
+            <p>بریښنالیک: <a href="mailto:Homayun.kbl@gmail.com">Homayun.kbl@gmail.com</a></p>
+            <p>تلیفون: <a href="tel:+93731575758">+93731575758</a></p>
+            <p>واتس‌اپ: <a href="https://wa.me/93731575758" target="_blank">په واتس‌اپ کې HK Thesis Writing Services ته پیغام واستوئ</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 HK-Writing Services</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.language-buttons button').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                document.getElementById(button.dataset.language).style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
